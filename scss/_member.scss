@@ -1,0 +1,89 @@
+.member {
+  background-color: $color-accent;
+  height: auto;
+  margin: 1rem 0;
+  padding: 1rem 10rem;
+  grid-row: 4/5;
+  grid-column: full-start/full-end;
+  &__heading {
+    text-align: center;
+    font-size: 3rem;
+  }
+  &__profile {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  &__img {
+    object-fit: cover;
+    background-position: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+  &__pos {
+    color: $color-tertiary-dark;
+  }
+  &__name {
+    color: $color-tertiary;
+    margin-top: 1rem;
+  }
+  &__des {
+    width: 60%;
+    font-weight: 500;
+    margin: 1rem auto;
+  }
+  &__icon {
+    i {
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    &--face:hover {
+      color: blue;
+    }
+    &--twi:hover {
+      color: aqua;
+    }
+    &--ins:hover {
+      color: orange;
+    }
+  }
+  @include response(tab-land) {
+    &__profile {
+      padding: 1rem 1.5rem;
+    }
+    &__img {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}
+.swiper {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

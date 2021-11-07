@@ -1,0 +1,47 @@
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
+.mt-sm {
+  margin-top: 2rem;
+}
+.mt-md {
+  margin-top: 3rem;
+}
+.mt-lg {
+  margin-top: 4rem;
+}
+.mt-hg {
+  margin-top: 8rem;
+}
+.heading-1 {
+  font-weight: $primary-font-weight;
+}
+.button-primary {
+  background-color: $color-tertiary;
+  color: $color-accent;
+  border-style: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: $default-font;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.button-primary:hover {
+  background-color: $color-tertiary-dark;
+}
+.markup {
+  color: $color-tertiary;
+}
+.appear {
+  opacity: 1;
+}

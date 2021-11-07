@@ -1,0 +1,77 @@
+.tien {
+  grid-row: 6/7;
+  padding: 5rem 3rem;
+  grid-column: full-start/full-end;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 70rem;
+  transform: rotateX(5deg);
+  &__text {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  &__img {
+    height: auto;
+    background-color: $color-accent;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.4);
+  }
+  &__skill {
+    background-color: $color-tertiary;
+    width: 50%;
+    height: 40rem;
+    padding: 2rem;
+    z-index: -1;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.4);
+  }
+  &__photo {
+    height: 35rem;
+  }
+}
+.skill {
+  &__container {
+    background-color: $color-accent;
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px;
+  }
+  &__name {
+    margin: 1rem 0;
+    color: $color-accent;
+  }
+}
+.skills {
+  background-color: $color-tertiary-dark;
+  height: 2rem;
+  border-radius: 10px;
+  &--py {
+    background-color: yellow;
+    width: 78%;
+  }
+  &--net {
+    background-color: plum;
+    width: 90%;
+  }
+  &--html {
+    background-color: orange;
+    width: 68%;
+  }
+  &--java {
+    background-color: lightblue;
+    width: 88%;
+  }
+  &--css {
+    background-color: blue;
+    width: 58%;
+  }
+}

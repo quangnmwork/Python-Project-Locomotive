@@ -1,0 +1,21 @@
+.footer {
+  grid-row: 21/25;
+  margin-top: 10rem;
+  padding: 60rem 10rem;
+
+  margin-top: 10rem;
+  grid-column: full-start/full-end;
+  height: 10rem;
+  font-size: 12rem;
+  text-align: center;
+}
+.lerp-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+  line-height: 0.8;
+}
+.lerp-wrap span {
+  display: inline-block;
+  font-size: clamp(32px, 4vw, 6vw);
+}
