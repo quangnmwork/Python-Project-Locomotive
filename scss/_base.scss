@@ -44,10 +44,3 @@ body {
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 }
-.scroll-to-top {
-  grid-column: center-end 1 / full-end;
-  z-index: 99999999;
-  margin-top: 100%;
-  background-color: blue;
-  right: 0;
-}
