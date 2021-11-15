@@ -2,7 +2,7 @@ const headingTeam = document.querySelector(".header__team");
 const targetMember = document.querySelector(".member");
 const targetSkill = document.querySelector(".tien");
 const targetProject = document.querySelector(".project");
-const targetGoodbye = document.querySelector(".lerp-wrap");
+const targetGoodbye = document.querySelector(".contact");
 
 var typewriter = new Typewriter(headingTeam, {
   loop: true,
