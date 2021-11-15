@@ -33,14 +33,12 @@ body {
   font-size: $default-font;
   font-family: $primary-font-family;
   font-weight: $primary-font-weight;
+  box-sizing: border-box;
 }
 .container {
   display: grid;
-  grid-template-rows: 15vh 80vh repeat(25, min-content);
+  grid-template-rows: 15vh 80vh repeat(35, min-content);
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
-      8,
-      [col-start] minmax(min-content, 14rem) [col-end]
-    )
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
 }

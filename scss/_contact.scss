@@ -1,0 +1,89 @@
+.contact {
+  grid-row: 21/25;
+  margin-top: 110rem;
+  padding: 0rem 0rem;
+  grid-column: full-start/full-end;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 10rem;
+    background: rgb(255, 88, 95);
+    background: linear-gradient(328deg, rgba(255, 88, 95, 1) 51%, rgba(248, 48, 58, 1) 100%);
+  }
+  &__img {
+    height: 40rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__heading {
+    font-size: 5rem;
+    color: white;
+  }
+  &__des {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+  }
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.6rem;
+    border-style: none;
+    padding: 1rem 2rem;
+    outline: none;
+    color: #555;
+  }
+  &__area {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 15rem;
+    font-size: 1.6rem;
+    border-style: none;
+    padding: 1rem 2rem;
+    outline: none;
+    color: #555;
+  }
+  &__button {
+    z-index: 1;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    outline: none;
+    width: 30%;
+    border: none;
+    background-color: $color-tertiary-dark;
+    &:hover {
+      cursor: pointer;
+      animation: jelly 0.5s linear infinite;
+    }
+  }
+}
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

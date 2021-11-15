@@ -33,9 +33,11 @@
     @include response(tab-port) {
       grid-column: col-start 5 / span 5;
     }
-    display: grid;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
     align-items: center;
-    grid-template-columns: repeat(5, 1fr);
+    // grid-template-columns: repeat(5, 1fr);
   }
   &__item {
     text-align: center;
@@ -44,18 +46,16 @@
     font-weight: $accent-font-weight;
 
     &--special {
-      position: relative;
-      background-color: $color-tertiary;
-      border-radius: 15px;
-      padding-top: bottom 1rem;
-      height: 3rem;
       color: $color-accent;
+      display: flex;
     }
     &--contact {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      color: $color-accent;
+      align-items: center;
+      padding: 0.5rem 3rem;
+      background-color: $color-tertiary;
+      border-radius: 15px;
+      height: 3rem;
     }
     &--title {
       position: relative;

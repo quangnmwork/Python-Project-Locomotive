@@ -20,25 +20,19 @@ body {
   font-size: 1.6rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 15vh 80vh (min-content)[25];
-      grid-template-rows: 15vh 80vh repeat(25, -webkit-min-content);
-      grid-template-rows: 15vh 80vh repeat(25, min-content);
+  -ms-grid-rows: 15vh 80vh (min-content)[35];
+      grid-template-rows: 15vh 80vh repeat(35, -webkit-min-content);
+      grid-template-rows: 15vh 80vh repeat(35, min-content);
   -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start] ([col-start] minmax(min-content, 14rem) [col-end])[8] [center-end] minmax(6rem, 1fr) [full-end];
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-}
-
-.scroll-to-top {
-  grid-column: center-end 1 / full-end;
-  z-index: 99999999;
-  margin-top: 100%;
-  background-color: blue;
-  right: 0;
 }
 
 .mb-sm {
@@ -372,9 +366,9 @@ body {
   -ms-grid-row: 11;
   -ms-grid-row-span: 2;
   grid-row: 11/13;
-  padding: 20rem 3rem;
+  padding: 10rem 3rem;
   grid-column: full-start/full-end;
-  height: 60rem;
+  height: 90rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 65% 35%;
@@ -423,7 +417,7 @@ body {
   -ms-grid-row: 7;
   -ms-grid-row-span: 3;
   grid-row: 7/10;
-  padding: 5rem 3rem;
+  padding: 10rem 3rem;
   grid-column: full-start/full-end;
   height: 90rem;
   display: -ms-grid;
@@ -466,7 +460,7 @@ body {
 }
 
 .minh__container {
-  background-color: #c70039;
+  background-color: #f8636b;
   width: 80%;
   height: 40rem;
   padding: 2rem;
@@ -502,7 +496,7 @@ body {
   -ms-grid-row: 14;
   -ms-grid-row-span: 1;
   grid-row: 14/15;
-  padding: 30rem 3rem;
+  padding: 5rem 3rem;
   grid-column: full-start/full-end;
   height: 7rem;
   text-align: center;
@@ -516,7 +510,7 @@ body {
   padding: 0rem 10rem;
   margin-top: 10rem;
   grid-column: full-start/full-end;
-  height: 60rem;
+  height: 30rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -552,22 +546,164 @@ body {
 }
 
 .project--descript {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
-.footer {
+.contact {
   -ms-grid-row: 21;
   -ms-grid-row-span: 4;
   grid-row: 21/25;
-  margin-top: 10rem;
-  padding: 60rem 10rem;
-  margin-top: 10rem;
+  margin-top: 110rem;
+  padding: 0rem 0rem;
   grid-column: full-start/full-end;
-  height: 10rem;
+}
+
+.contact__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 10rem 10rem;
+  background: #ff585f;
+  background: linear-gradient(328deg, #ff585f 51%, #f8303a 100%);
+}
+
+.contact__img {
+  height: 40rem;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.contact__heading {
+  font-size: 5rem;
+  color: white;
+}
+
+.contact__des {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.contact__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__input {
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 1.6rem;
+  border-style: none;
+  padding: 1rem 2rem;
+  outline: none;
+  color: #555;
+}
+
+.contact__area {
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  height: 15rem;
+  font-size: 1.6rem;
+  border-style: none;
+  padding: 1rem 2rem;
+  outline: none;
+  color: #555;
+}
+
+.contact__button {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  outline: none;
+  width: 30%;
+  border: none;
+  background-color: #f8303a;
+}
+
+.contact__button:hover {
+  cursor: pointer;
+  -webkit-animation: jelly 0.5s linear infinite;
+          animation: jelly 0.5s linear infinite;
+}
+
+@-webkit-keyframes jelly {
+  0%,
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+            transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+}
+
+.footer {
+  -ms-grid-row: 26;
+  -ms-grid-row-span: 3;
+  grid-row: 26/29;
+  padding: 50rem 10rem;
+  grid-column: full-start/full-end;
+  height: 5rem;
   font-size: 12rem;
   text-align: center;
 }
@@ -628,13 +764,16 @@ body {
   -ms-grid-row: 1;
   grid-row: 1/1;
   grid-column: col-start 5 / span 4;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
 }
 
 @media (max-width: 56.25em) {
@@ -651,20 +790,21 @@ body {
 }
 
 .nav__item--special {
-  position: relative;
-  background-color: #ff585f;
-  border-radius: 15px;
-  padding-top: bottom 1rem;
-  height: 3rem;
   color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__item--contact {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  color: #f9f9f9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 3rem;
+  background-color: #ff585f;
+  border-radius: 15px;
+  height: 3rem;
 }
 
 .nav__item--title {

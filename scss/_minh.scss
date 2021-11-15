@@ -1,6 +1,6 @@
 .minh {
   grid-row: 7/10;
-  padding: 20rem 3rem;
+  padding: 10rem 3rem;
   grid-column: full-start/full-end;
   height: 90rem;
   display: grid;
@@ -31,7 +31,7 @@
     justify-content: center;
   }
   &__container {
-    background-color: $color-primary;
+    background-color: #f8636b;
     width: 80%;
     height: 40rem;
     padding: 2rem;
@@ -61,7 +61,7 @@
 }
 .ourproject {
   grid-row: 14/15;
-  padding: 30rem 3rem;
+  padding: 5rem 3rem;
   grid-column: full-start/full-end;
   height: 7rem;
   text-align: center;

@@ -40,7 +40,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 20,
   slidesPerGroup: 1,
   speed: 700,
-  duration: 3000,
+  duration: 5000,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -66,9 +66,9 @@ var swiper = new Swiper(".mySwiper", {
 document.querySelector(".viewmore").addEventListener("click", () => {
   scroll.scrollTo(targetMember);
 });
-document.querySelector(".item-work").addEventListener("click", () => {
-  scroll.scrollTo(targetSkill);
-});
+// document.querySelector(".item-work").addEventListener("click", () => {
+//   scroll.scrollTo(targetSkill);
+// });
 document.querySelector(".item-skill").addEventListener("click", () => {
   scroll.scrollTo(targetSkill);
 });
