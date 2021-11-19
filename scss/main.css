@@ -557,8 +557,8 @@ body {
   -ms-grid-row: 21;
   -ms-grid-row-span: 4;
   grid-row: 21/25;
-  height: 50rem;
-  margin-top: 100rem;
+  height: 60rem;
+  margin-top: 95rem;
   grid-column: full-start/full-end;
 }
 
