@@ -557,8 +557,8 @@ body {
   -ms-grid-row: 21;
   -ms-grid-row-span: 4;
   grid-row: 21/25;
-  margin-top: 110rem;
-  padding: 0rem 0rem;
+  height: 50rem;
+  margin-top: 100rem;
   grid-column: full-start/full-end;
 }
 
@@ -701,9 +701,10 @@ body {
   -ms-grid-row: 26;
   -ms-grid-row-span: 3;
   grid-row: 26/29;
-  padding: 50rem 10rem;
+  margin-top: 35rem;
+  padding: 10rem 10rem;
   grid-column: full-start/full-end;
-  height: 5rem;
+  height: 60rem;
   font-size: 12rem;
   text-align: center;
 }
