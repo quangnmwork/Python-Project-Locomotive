@@ -1,13 +1,13 @@
 .project {
-  grid-row: 16/19;
-  padding: 0rem 10rem;
-  margin-top: 10rem;
+  grid-row: 16/17;
+  padding: 10rem 10rem;
+  margin-top: 5rem;
   grid-column: full-start/full-end;
-  height: 30rem;
+  height: 50rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2rem;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
   &--name {
     background-color: $color-accent;
@@ -20,7 +20,7 @@
     box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.4);
     text-align: center;
     img {
-      height: 30rem;
+      height: 20rem;
     }
     p {
       color: $color-primary;
